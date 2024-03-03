@@ -747,6 +747,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
     <script>
         function actualizarFecha() {
             var fechaActual = new Date();
@@ -757,6 +758,31 @@
 
         actualizarFecha(); // Llama a la función para mostrar la fecha actual al cargar la página
         setInterval(actualizarFecha, 1000);
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+        function actualizarFecha() {
+            var fechaActual = new Date();
+            var opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
+            document.getElementById('fecha').textContent = fechaFormateada;
+        }
+
+        actualizarFecha(); // Llama a la función para mostrar la fecha actual al cargar la página
+        setInterval(actualizarFecha, 1000);
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
