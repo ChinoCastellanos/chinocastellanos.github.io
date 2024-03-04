@@ -9600,6 +9600,7 @@ h6,
 
 .section-title {
   margin-bottom: 15px;
+  margin-left: auto; /* Añadido para alinear a la derecha */
   padding: 15px;
   display: flex;
   align-items: center;
