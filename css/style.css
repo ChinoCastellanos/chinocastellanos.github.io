@@ -6177,6 +6177,10 @@ button.bg-dark:focus {
   background-color: #fff !important;
 }
 
+.bg-mundochino {
+  background-color: #6f42c1 !important;
+}
+
 .bg-transparent {
   background-color: transparent !important;
 }
