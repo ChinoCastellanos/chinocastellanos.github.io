@@ -123,7 +123,7 @@
                         <div class="overlay">
                             <div class="mb-2">
                                 <a class="badge badge-primary category" href="#">Categoría</a>
-                                <a class="text-white date" href=""><small>{{current_date}}</small></a>
+                                <a class="text-white date" id="currentDate" href=""><small>{{current_date}}</small></a>
                             </div>
                             <a class="h2 m-0 news-title" href="#">Fetch News Title Dynamically</a>
                         </div>
@@ -133,7 +133,7 @@
                         <div class="overlay">
                             <div class="mb-2">
                                 <a class="badge badge-primary category" href="#">Categoría</a>
-                                <a class="text-white date" href=""><small>{{current_date}}</small></a>
+                                <a class="text-white date" id="currentDate" href=""><small>{{current_date}}</small></a>
                             </div>
                             <a class="h2 m-0 news-title" href="#">Fetch News Title Dynamically</a>
                         </div>
@@ -143,7 +143,7 @@
                         <div class="overlay">
                             <div class="mb-2">
                                 <a class="badge badge-primary category" href="#">Categoría</a>
-                                <a class="text-white date" href=""><small>{{current_date}}</small></a>
+                                <a class="text-white date" id="currentDate" href=""><small>{{current_date}}</small></a>
                             </div>
                             <a class="h2 m-0 news-title" href="#">Fetch News Title Dynamically</a>
                         </div>
@@ -160,7 +160,7 @@
                     <div class="overlay">
                         <div class="mb-2">
                             <a class="badge badge-primary category" href="">Categoría</a>
-                            <a class="text-white date" href=""><small>{{current_date}}</small></a>
+                            <a class="text-white date" id="currentDate" href=""><small>{{current_date}}</small></a>
                         </div>
                         <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Noticia Random</a>
                     </div>
@@ -172,7 +172,7 @@
                     <div class="overlay">
                         <div class="mb-2">
                             <a class="badge badge-primary category" href="">Categoría</a>
-                            <a class="text-white date" href=""><small>{{current_date}}</small></a>
+                            <a class="text-white date" id="currentDate" href=""><small>{{current_date}}</small></a>
                         </div>
                         <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Noticia Random</a>
                     </div>
@@ -184,7 +184,7 @@
                     <div class="overlay">
                         <div class="mb-2">
                             <a class="badge badge-primary category" href="">Categoría</a>
-                            <a class="text-white date" href=""><small>{{current_date}}</small></a>
+                            <a class="text-white date" id="currentDate" href=""><small>{{current_date}}</small></a>
                         </div>
                         <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Noticia Random</a>
                     </div>
@@ -196,7 +196,7 @@
                     <div class="overlay">
                         <div class="mb-2">
                             <a class="badge badge-primary category" href="">Categoría</a>
-                            <a class="text-white date" href=""><small>{{current_date}}</small></a>
+                            <a class="text-white date" id="currentDate" href=""><small>{{current_date}}</small></a>
                         </div>
                         <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Noticia Random</a>
                     </div>
@@ -625,6 +625,7 @@
             const opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
             document.getElementById('fecha').textContent = fechaFormateada;
+            document.getElementById('currentDate').textContent = fechaFormateada;
         }
 
         actualizarFecha(); // Llama a la función para mostrar la fecha actual al cargar la página
@@ -637,5 +638,5 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     </body>
-    
+
 </html>
