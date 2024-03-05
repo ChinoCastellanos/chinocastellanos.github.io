@@ -679,6 +679,15 @@ pre code {
   align-items: center;
 }
 
+.rowfoot1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: 0rem;
+  justify-content: left;
+  align-items: center;
+}
+
 .rowfoot {
   display: flex;
   flex-wrap: wrap;
