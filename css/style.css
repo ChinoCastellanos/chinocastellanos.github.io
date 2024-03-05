@@ -592,11 +592,51 @@ pre code {
   overflow-y: scroll;
 }
 
-.container,
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.container-fluid {
+  box-sizing: border-box;
+  width: 100vw;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.container-sm {
+  box-sizing: border-box;
+  width: 100vw;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.container-md {
+  box-sizing: border-box;
+  width: 100vw;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.container-lg {
+  box-sizing: border-box;
+  width: 100vw;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
 .container-xl {
   box-sizing: border-box;
   width: 100vw;
