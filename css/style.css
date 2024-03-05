@@ -596,18 +596,18 @@ pre code {
   box-sizing: border-box;
   width: 100vw;
   padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-left: 0rem;
   margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  margin-left: 0rem;
 }
 
 .container-fluid {
   box-sizing: border-box;
   width: 100vw;
   padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-left: 0rem;
   margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  margin-left: 0rem;
 }
 
 .container-sm {
@@ -616,7 +616,7 @@ pre code {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  margin-left: 0rem;
 }
 
 .container-md {
@@ -625,7 +625,7 @@ pre code {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  margin-left: 0rem;
 }
 
 .container-lg {
@@ -634,7 +634,7 @@ pre code {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  margin-left: 0rem;
 }
 
 .container-xl {
@@ -643,7 +643,7 @@ pre code {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  margin-left: 0rem;
 }
 
 @media (min-width: 576px) {
@@ -673,8 +673,10 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: auto;
+  margin-left: 0rem;
+  justify-content: left;
+  align-items: center;
 }
 
 .no-gutters {
@@ -704,20 +706,21 @@ pre code {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
+  margin-left: 0;
 }
 
 .row-cols-1 > * {
-  flex: 0 0 100%;
+  flex: 0 0 0%;
   max-width: 100%;
 }
 
 .row-cols-2 > * {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 0%;
+  max-width: 100%;
 }
 
 .row-cols-3 > * {
-  flex: 0 0 33.33333%;
+  flex: 0 0 0%;
   max-width: 33.33333%;
 }
 
@@ -3049,7 +3052,7 @@ input[type="button"].btn-block {
 
 .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.255em;
+  margin-left: 0rem;
   vertical-align: 0.255em;
   content: "";
   border-top: 0.3em solid;
@@ -9642,13 +9645,14 @@ h6,
 .section-title {
   margin-bottom: 15px;
   margin-left: auto; /* Añadido para alinear a la derecha */
-  padding: 15px;
+  padding: 9px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #929ee4;
   border: 1px solid #dee2e6;
   border-left: 5px solid #FFCC00;
+  width: 100%; /* Añadido para que ocupe todo el ancho */
 }
 
 .news-carousel .owl-nav {
