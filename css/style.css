@@ -679,6 +679,15 @@ pre code {
   align-items: center;
 }
 
+.rowfoot {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 5rem;
+  margin-left: 0rem;
+  justify-content: left;
+  align-items: center;
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
