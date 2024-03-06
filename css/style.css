@@ -601,6 +601,25 @@ pre code {
   margin-left: 0rem;
 }
 
+.containerfechatiempo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-contentfechatiempo {
+  flex-grow: 1;
+  position: relative;
+}
+
+.right-contentfechatiempo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* ajusta la altura según tus necesidades */
+  border: 0;
+}
+
 .container-fluid {
   box-sizing: border-box;
   width: 100vw;
