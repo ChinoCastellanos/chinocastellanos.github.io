@@ -604,6 +604,9 @@ pre code {
 .containerfechatiempo {
   display: flex;
   justify-content: space-between;
+  max-width: 50%; /* Aquí puedes ajustar el tamaño máximo */
+  max-height: 50%; /* Aquí puedes ajustar el tamaño máximo */
+  overflow: hidden; /* Esto evita que el contenido sobresalga si excede el tamaño máximo */
 }
 
 .right-contentfechatiempo {
